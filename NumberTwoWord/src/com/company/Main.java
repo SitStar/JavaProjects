@@ -45,7 +45,7 @@ class WordNumber{
                 words += singleDigitToWord(number);
             }
         }
-        while (power ! = 0)
+
         // powers
         if (power != 0) {
             if (numCopy >= 100) {
@@ -65,8 +65,7 @@ class WordNumber{
         }
 
         int leftover = power == 0 ? numCopy : (int) (number % Math.pow(1000, power));
-        power--;
-    }
+
 
         //space
         if(leftover > 0){
